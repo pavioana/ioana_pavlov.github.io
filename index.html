@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ioana Pavlov - Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* This makes the header full-screen */
+    overflow: hidden;
+   
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+
+}
+
+.video-container iframe {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /*Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    transform: translate(-50%, -50%);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+       
+}
+
+.big-title {
+    font-size: 10vw; /* Adjust this value to make the text bigger or smaller */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 0;
+}
+
+.big-title::before {
+    content: none;
+}
+
+/* you might want to add a semi-transparent overlay to ensure text readability */
+header::after {
+    content: 'none';
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-text-fill-color: white; /* Override the transparent text color */
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-subsection {
+    margin-bottom: 30px;
+}
+
+.about-subsection h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cv-download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-download-btn:hover {
+    background-color: #0056b3;
+}
+
+.project {
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.5rem;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="video-container">
+            <iframe
+                id="ytplayer"
+                src="https://www.youtube.com/embed/vgkRgXhI2kk?si=enJvqV9kY70GJ69N&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=vgkRgXhI2kk&amp;start=11&amp;end=40&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+            ></iframe>
+        </div>
+        <div class="header-content">
+         <h1 class= "big-title">Ioana Pavlov</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-column">
+            <h2>About</h2>
+            <p>My professional journey has been one of exciting transformation and discovery. With a strong background in management and retail operations, I've always been driven by a passion for efficiency and innovation. However, it was my transition into the world of IT that truly ignited my enthusiasm for technology.</p>
+        </p>
+        <p>As I delved deeper into the tech realm, I discovered my true calling in cloud computing. My journey with industry leaders like AWS has been instrumental in accelerating my growth and success in this field. This experience not only honed my technical skills but also gave me a profound understanding of how cloud technologies are reshaping businesses and industries.</p>
+    
+        <p>Today, I blend my management expertise with cutting-edge IT knowledge, offering a unique perspective on technology implementation and strategy. My goal is to leverage cloud computing to drive innovation and efficiency, just as I once did in my retail operations role.</p>
+        
+        <p>I'm excited to continue growing in this ever-evolving field and to contribute to the next wave of technological advancements. Whether it's optimizing cloud infrastructures or developing innovative solutions, I'm always ready for the next challenge in my IT journey.</p>
+        </div>
+        <div class="resume-coloumn">
+            <h2>My CV</h2>
+            <ul class="CV-list">
+                <li>
+                    <h3>Cloud Computing Specialist</h3>
+                    <p>AWS | 2022 - Present</p>
+                    <ul>
+                        <li>Implemented and managed cloud infrastructure solutions</li>
+                        <li>Optimized cloud resources for cost-efficiency and performance</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>IT Project Manager</h3>
+                    <p>Tech Solutions Inc. | 2018 - 2020</p>
+                    <ul>
+                        <li>Led cross-functional teams in implementing IT solutions</li>
+                        <li>Streamlined project processes, improving delivery times by 25%</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Retail Operations Manager</h3>
+                    <p>Retail Co. | 2015 - 2018</p>
+                    <ul>
+                        <li>Managed daily operations of a high-volume retail store</li>
+                        <li>Implemented new inventory system, reducing shrinkage by 15%</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="path/to/your/full_resume.pdf" class="resume-download" target="_blank">Download Full Resume</a>
+        </div>
+    </div>
+           
+    </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of your first project.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of your second project.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: your.email@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ioana Pavlov. All rights reserved.</p>
+    </footer>
+</body>
+
+<script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('ytplayer', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.ENDED) {
+            player.seekTo(11);
+            player.playVideo();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var title = document.querySelector('.big-title');
+        title.setAttribute('data-text', title.textContent);
+    })
+</script>
+</html>
